@@ -1,4 +1,3 @@
-# securelocker
 # Secure RFID Access Control & Logging System
 
 This project is a complete solution for a secure RFID-based access control system. It uses an ESP32 microcontroller to read RFID cards, encrypts the UID data using AES-128, and sends it to a central server running XAMPP (Apache and MySQL). A PHP backend processes the data, logs all access attempts to a database, and provides a simple web-based dashboard to view real-time logs.
@@ -39,11 +38,11 @@ The system is designed to be a proof-of-concept for secure data transmission bet
 - Navigate to the SQL tab and run the SQL code from the server/database.sql file to create the rfid_system database and its tables.
 
 ## Step 2: Server Setup
-- Place the server/ directory and all its contents inside your XAMPP's web root folder. This is typically C:\xampp\htdocs\. The path should look like C:\xampp\htdocs\rfid-access-control\server\.
+- Place the server/ directory and all its contents inside your XAMPP's web root folder. This is typically `C:\xampp\htdocs\`. The path should look like `C:\xampp\htdocs\rfid-access-control\server\`.
 - Open server/log_uid.php and server/index.php and verify the database credentials match your setup (default is username="root" and password="").
 
 ## Step 3: ESP32 Setup
-- Open the esp32/rfid-aes.ino file in the Arduino IDE.
+- Open the rfid.ino file in the Arduino IDE.
 - Install the required libraries listed in the Prerequisites section using the Arduino Library Manager.-
 - Update the Wi-Fi credentials in the code:
 ```
